@@ -108,10 +108,6 @@ a {
   padding: 3px 20px;
   color: #ffffff;
   font-weight: 700;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .color {
@@ -160,6 +156,7 @@ a {
 }
 
 .intro {
+  overflow: hidden;
   padding-bottom: 50px;
 }
 .intro__inner {
@@ -318,4 +315,285 @@ a {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1180px) {
+  .who::after {
+    width: 300px;
+    height: 120px;
+    right: -60px;
+  }
+
+  .expert {
+    overflow: hidden;
+  }
+  .expert__img {
+    display: block;
+    width: 400px;
+  }
+}
+@media (max-width: 1112px) {
+  .container {
+    padding: 0 2%;
+  }
+
+  .header {
+    padding-left: 0;
+  }
+
+  .intro__inner {
+    padding-left: 0;
+  }
+
+  .expert__inner {
+    padding: 0;
+  }
+}
+@media (max-width: 1040px) {
+  .header {
+    padding: 30px 0;
+  }
+
+  .intro__img {
+    display: block;
+    width: 50%;
+  }
+
+  .who::after {
+    background-size: 100%;
+    width: 250px;
+    height: 90px;
+    right: -60px;
+  }
+
+  .if__inner {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 991px) {
+  .title--buy {
+    width: 95%;
+  }
+
+  .expert__img {
+    width: 70%;
+  }
+
+  .footer__link {
+    width: 45%;
+  }
+  .footer__link--item {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 834px) {
+  .title--expert {
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .subtitle--intro {
+    width: 70%;
+    margin: 0 auto 15px auto;
+  }
+
+  .button--intro {
+    margin: 40px auto 0 auto;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro {
+    padding: 0 0 70px 0;
+  }
+  .intro__inner {
+    flex-direction: column;
+  }
+  .intro__block {
+    order: 1;
+    text-align: center;
+  }
+  .intro__img {
+    order: 2;
+    margin-top: 40px;
+  }
+
+  .who::after {
+    display: none;
+  }
+
+  .if__inner--item {
+    padding: 40px 25px;
+  }
+
+  .expert__inner {
+    text-align: center;
+    flex-direction: column;
+  }
+  .expert__img {
+    margin-top: 40px;
+    width: 50%;
+  }
+  .expert__inf--item {
+    width: 49%;
+    padding: 45px 30px 50px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .if__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .if__inner--item {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .if__inner--item:nth-child(4) {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .footer__inner--text {
+    font-size: 24px;
+  }
+  .footer__inner--email {
+    font-size: 24px;
+  }
+}
+@media (max-width: 677px) {
+  .footer__inner--text {
+    font-size: 21px;
+  }
+  .footer__inner--email {
+    font-size: 21px;
+  }
+  .footer__link {
+    margin: 40px auto 0 auto;
+    width: 40%;
+  }
+  .footer__link--item {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 568px) {
+  .title {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .title--buy {
+    width: 100%;
+    margin: 0 auto 40px auto;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .button--if {
+    width: 95%;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+  .header__logo {
+    width: 121px;
+    height: 25px;
+  }
+
+  .intro__img {
+    width: 70%;
+  }
+
+  .who__text {
+    width: 90%;
+    margin: 20px auto 0 auto;
+  }
+
+  .if__inner {
+    padding: 40px 0;
+  }
+
+  .expert__inf {
+    flex-direction: column;
+    align-items: center;
+  }
+  .expert__inf--item {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .buy {
+    padding: 0 0 30px 0;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 414px) {
+  .if__inner--item {
+    width: 85%;
+  }
+  .if__inner--item:nth-child(4) {
+    width: 85%;
+  }
+
+  .expert__inf--item {
+    width: 85%;
+    padding: 30px 20px;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+  .footer__inner {
+    margin-top: 25px;
+  }
+  .footer__inner--text {
+    font-size: 14px;
+  }
+  .footer__inner--email {
+    font-size: 14px;
+  }
+  .footer__link {
+    width: 80%;
+  }
+}
+@media (max-width: 375px) {
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .title--buy {
+    font-size: 20px;
+    line-height: 34px;
+    margin: 0 auto 20px auto;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .subtitle--intro {
+    margin: 0 auto 10px auto;
+  }
+
+  .button {
+    height: 60px;
+  }
+  .button--intro {
+    margin: 30px auto 0 auto;
+  }
 }
